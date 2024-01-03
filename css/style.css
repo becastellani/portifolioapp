@@ -7,6 +7,7 @@
 
 body {
   background-color: #111111;
+  overflow-x: hidden;
 }
 
 #home {
@@ -29,7 +30,7 @@ body {
 
 .foto_port {
   position: absolute;
-  width: 20vw;
+  width: 20vw; /* Ajuste este valor conforme necessário */
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -56,17 +57,24 @@ body {
 }
 
 /* Ajusta o layout para telas menores */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: -450px;
     flex-direction: column;
-  }
+    width: 100%;
+}
   .foto_port {
     position: absolute;
-    top: 55%;
+    top: 20%;
     left: 50%;
     width: 60vw;
     transform: translate(-50%, -50%);
@@ -83,6 +91,13 @@ body {
     font-size: 5vw;
     justify-content: center;
     text-align: center;
+  }
+
+  #seta_home {
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #seta_home i {
