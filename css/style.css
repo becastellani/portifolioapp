@@ -36,11 +36,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#seta_home {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+.div-seta {
+  margin-top: -60px; /* Adiciona um espaçamento superior de 20px */
 }
 
 #seta_home i {
@@ -91,13 +88,6 @@ body {
     font-size: 5vw;
     justify-content: center;
     text-align: center;
-  }
-
-  #seta_home {
-    position: absolute;
-    top: 800px;
-    left: 50%;
-    transform: translateX(-50%);
   }
 
   #seta_home i {
