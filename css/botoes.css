@@ -46,3 +46,22 @@
     text-align: center;
     color: #fff;
 }
+
+.git-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.git-status img {
+    margin: 0 10px;
+}
+.pie-charts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.pie-charts img {
+    margin: 0 10px;
+}
