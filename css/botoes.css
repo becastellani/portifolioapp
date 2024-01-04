@@ -38,6 +38,11 @@
   height: 80px;
   margin-top: 10px;
 }
+.botao-experiencias img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+}
 
 #github-stats {
   display: flex;
