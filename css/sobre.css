@@ -104,6 +104,7 @@
     margin-left: 6px;
     font-size: 14px;
     line-height: 15px;
+    margin-bottom: 0px;
   }
   
   .terminal_body {
@@ -115,21 +116,39 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
+
   
   .terminal_promt {
     display: flex;
+    flex-wrap: wrap;
   }
   
+  .terminal_laravel{
+    color: chartreuse;
+  }
+  
+  .cdbranch{
+    color: aqua;
+  }
   .terminal_promt span {
     margin-left: 4px;
   }
   
   .terminal_user {
-    color: #1eff8e;
+    color: #3d57f4;
+    
+  }
+  .cdroot{
+    color: goldenrod;
   }
   
   .terminal_location {
     color: #4878c0;
+  }
+
+  .quebralinha {
+    display: block;
+    width: 100%;
   }
   
   .terminal_bling {
