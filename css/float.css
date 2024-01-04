@@ -10,6 +10,6 @@
     }
   }
   
-  #seta_home {
+  #seta_home i {
     animation: float 2s ease-in-out infinite;
   }

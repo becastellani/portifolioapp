@@ -1,94 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="botao.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/float.css" />
     <link rel="stylesheet" href="./css/botoes.css" />
+    <link rel="stylesheet" href="./css/sobre.css" />
     <title>Bernardo Castellani</title>
-</head>
+  </head>
 
-<body>
-    <!-- <div class="all_drop">
-        <p>Tema</p>
-        <div class="dropdown">
-          <button id="031f5a96" class="dropbtn"></button>
-          <div class="dropdown-content">
-            <a id="5a030396" onclick="colorChange(this.id)" style="background-color: rgb(255, 255, 255); cursor:pointer;"></a>
-            <a id="06bbc196" onclick="colorChange(this.id)" style="background-color: #5c29bb; cursor:pointer;"></a>
+  <body>
+    <div id="home">
+      <div id="particles-js">
+        <img class="foto_port" src="./img/fotoport.png" alt="" />
+        <div class="container tituloss ">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col-12 col-md-6">
+              <div class="first-titulos" style="display: flex">
+                <h1 class="titulo">Bernardo</h1>
+                <h1 class="castellani" style="color: #3d57f4">Castellani</h1>
+              </div>
+            </div>
+          </div>
+          <div class="subtitulos">
+            <div class="row">
+              <div class="col-12 col-md-6"></div>
+              <div class="col text-center">
+                <h2 class="titulo2">Estudante de Engenharia de Software</h2>
+              </div>
+            </div>
           </div>
         </div>
-    </div> -->
-    <div id="home">
-        <img class="foto_port" src="./img/fotoport.png" alt="" />
-        <div class="container">
-            <div class="row">
-                <div class="col"></div>
-                <div class="col-12 col-md-6">
-                    <div class="first-titulos" style="display: flex">
-                        <h1 class="titulo">Bernardo</h1>
-                        <h1 class="castellani" style="color: #3d57f4">Castellani</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6"></div>
-                <div class="col text-center">
-                    <h2 class="titulo2">Estudante de Engenharia de Software</h2>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+
     <div class="row div-seta">
-        <div class="col text-center">
-            <a id="seta_home" href="#first_page" >
-                <i class="fas fa-arrow-down"></i>
-            </a>
-        </div>
+      <div class="col text-center">
+        <a id="seta_home" href="#first_page">
+          <i class="fas fa-arrow-down"></i>
+        </a>
+      </div>
     </div>
-    <div style="margin-top: 20px;" id="first_page">
-        <div class="d-flex justify-content-center">
-            <a href="#sobre" class="">
-                <div class="botao-sobre">
-                    <span><img src="img/cara.png" /> </span> <span>Sobre mim</span>
-                </div>
-            </a>
-            <a href="#projetos" class="">
-                <div class="botao-projetos">
-                    <span><img src="img/gerenciamento-de-projetos.png" /></span>
-                    <span>Projetos</span>
-                </div>
-            </a>
-            <a href="#contato" class="">
-                <div class="botao-contato">
-                    <span><img src="img/contato.png" /></span> <span>Contato</span>
-                </div>
-            </a>
+    <div style="margin-top: 20px" id="first_page">
+      <div class="d-flex justify-content-center">
+        <a href="#sobre" class="">
+          <div class="botao-sobre">
+            <span><img src="img/cara.png" /> </span> <span>Sobre mim</span>
+          </div>
+        </a>
+        <a href="#projetos" class="">
+          <div class="botao-projetos">
+            <span><img src="img/gerenciamento-de-projetos.png" /></span>
+            <span>Projetos</span>
+          </div>
+        </a>
+        <a href="#contato" class="">
+          <div class="botao-contato">
+            <span><img src="img/contato.png" /></span> <span>Contato</span>
+          </div>
+        </a>
+      </div>
+      <div id="github-stats">
+        <h2>Github Stats</h2>
+        <div class="pie-charts">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=becastellani&layout=donut-vertical&theme=blue-green"
+            alt=""
+          />
         </div>
-        <div id="github-stats">
-            <h2>Github Stats</h2>
-            <div class="pie-charts">
-                <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=becastellani&layout=donut-vertical&theme=blue-green"
-                    alt="">
-            </div>
-            <div class="git-status">
-                <img height="160em"
-                    src="https://github-readme-stats-sigma-five.vercel.app/api?username=becastellani&show_icons=true&theme=blue-green&hide_border=false&show_owner=true" />
-                <img height="160em"
-                    src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=becastellani&theme=blue-green&hide_border=false&&layout=compact" />
-            </div>
+        <div class="git-status">
+          <img
+            height="160em"
+            src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=becastellani&theme=blue-green&hide_border=false&&layout=compact"
+          />
+          <img
+            height="160em"
+            src="https://github-readme-stats-sigma-five.vercel.app/api?username=becastellani&show_icons=true&theme=blue-green&hide_border=false&show_owner=true"
+          />
         </div>
+      </div>
+    </div>
+    <div id="sobre">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <p class="title-sobre">Sobre</p>
+          <div class="sobre-div">
+            <p class="desc">
+              Apaixonado por tecnologia desde os 12 anos, sou estudante de
+              Engenharia de Software, buscando constantemente aprendizado. Tenho
+              experiência prática em diversas tecnologias, como PHP, Laravel,
+              ReactJS, MySql, C++ e C# (.NET Framework), além de habilidades em
+              manutenção de computadores, programação de Arduino e robótica.
+              Mesmo sem concluir meu curso de Tecnologia em Desenvolvimento de
+              Sistemas devido a uma mudança de estado, essa experiência
+              solidificou minha base de conhecimento e desenvolveu uma
+              mentalidade analítica. Além disso, como ex-jogador de basquete com
+              oito anos de experiência, atuei como capitão, aprimorando
+              habilidades de liderança, trabalho em equipe e resiliência.
+              Motivado pela paixão enraizada pela tecnologia, busco desafios
+              empolgantes para expandir meus conhecimentos e contribuir para
+              soluções inovadoras.
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="container-terminal">
+            <div class="terminal_toolbar">
+              <div class="butt">
+                <button class="btn btn-color"></button>
+                <button class="btn"></button>
+                <button class="btn"></button>
+              </div>
+              <p class="user">becastellani@admin: ~</p>
+              <div class="add_tab">+</div>
+            </div>
+            <div class="terminal_body">
+              <div class="terminal_promt">
+                <span class="terminal_user">becastellani@admin:</span>
+                <span class="terminal_location">~</span>
+                <span class="terminal_bling">$ php artisan serve</span>
+                <span class="terminal_cursor"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <canvas width="600" height="600"></canvas>
-</body>
-<script src="./js/type.js"></script>
+  </body>
+  <script src="./js/type.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- stats.js lib -->
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 80,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 4,
+            color: "#000000",
+          },
+          polygon: {
+            nb_sides: 5,
+          },
+          image: {
+            src: "img/github.svg",
+            width: 100,
+            height: 100,
+          },
+        },
+        opacity: {
+          value: 0.5,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 0,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: true,
+          distance: 299.87610382026367,
+          color: "#ffffff",
+          opacity: 0.06313181133058181,
+          width: 1.4204657549380908,
+        },
+        move: {
+          enable: true,
+          speed: 6,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "grab",
+          },
+          onclick: {
+            enable: true,
+            mode: "push",
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+    var count_particles, stats, update;
+    stats = new Stats();
+    stats.setMode(0);
+    stats.domElement.style.position = "absolute";
+    stats.domElement.style.left = "0px";
+    stats.domElement.style.top = "0px";
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector(".js-count-particles");
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (
+        window.pJSDom[0].pJS.particles &&
+        window.pJSDom[0].pJS.particles.array
+      ) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
 
+    particlesJS.load("particles-js", "particles.json", function () {
+      console.log("particles.json loaded...");
+    });
+  </script>
 </html>
