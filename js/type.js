@@ -10,22 +10,22 @@ function typeWrite(elemento){
   });
   
 }
-const ritzel = document.querySelector('.castellani');
+const castellani = document.querySelector('.castellani');
 const titulo = document.querySelector('.titulo');
 const titulo2 = document.querySelector('.titulo2');
-    const textoritzel = ritzel.innerHTML.split('');
-    ritzel.innerHTML = ' ';
+    const textocastellani = castellani.innerHTML.split('');
+    castellani.innerHTML = ' ';
 typeWrite(titulo);
 
 setTimeout(()=>{
     titulo.classList.remove("titulo")
-    ritzel.classList.add("titulo")
-    textoritzel.forEach(function(letra, i){   
+    castellani.classList.add("titulo")
+    textocastellani.forEach(function(letra, i){   
         setTimeout(function(){
-            ritzel.innerHTML += letra;
+            castellani.innerHTML += letra;
         }, 75 * i)
     
       });
-}, 700)
+}, 1000)
 
 typeWrite(titulo2)

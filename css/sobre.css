@@ -207,4 +207,10 @@
         width: 90%;
         height: 300px;
     }
+
+    .title-sobre{
+      font-size: 2.0em;
+      color: #fff;
+      margin-bottom: 2rem;
+  }
 }

@@ -1,0 +1,88 @@
+
+.all-projects{
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+}
+.card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 340px;
+    height: 500px;
+    background: #11111100;
+    perspective: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none ;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border: none ;
+  }
+  
+  .card:hover .content {
+    transform: rotateY( 180deg ) ;
+    transition: transform 0.5s;
+  }
+  
+  .front,
+  .back {
+    padding-top: 20px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#9694ff, #3d57f4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 40px;
+    border-radius: 15px;
+    backface-visibility: hidden;
+  }
+
+.front img{
+    width: 64px;
+}
+  .list{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 24px;
+  }
+  .back a{
+    font-size: 20px;
+  }
+  .back {
+    background: linear-gradient(#3d57f4, #9694ff);;
+    color: #ffffff;
+    transform: rotateY( 180deg );
+  }
+
+  .seta{
+    width: 90%; 
+    display: flex; 
+    justify-content: right; 
+    margin-top: 50px;
+  }
+  .card_cara{
+    font-size: 28px;
+  }
+
+  @media (max-width: 600px) {
+    .card {
+      width: 200px;
+      height: 300px;
+    }
+  }
