@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="botao.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/float.css" />
     <link rel="stylesheet" href="./css/botoes.css" />
     <link rel="stylesheet" href="./css/sobre.css" />
@@ -31,42 +25,56 @@
     <link rel="stylesheet" href="./css/card-project.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Bernardo Castellani</title>
-  </head>
+</head>
 
-  <body>
+<body>
+    <header class="header">
+        <h1 class="navtitulo" style="color: white"><a href="#home" style="text-decoration: none;"><span style="color: #3d57f4">&lt;?</span>Portfolio <span
+                style="color: #3d57f4">&gt;</span></a></h1>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </header>
+
     <div id="home">
-      <div id="particles-js">
-        <img class="foto_port" src="./img/fotoport.png" alt="" />
-        <div class="container tituloss">
-          <div class="row">
-            <div class="col"></div>
-            <div class="col-12 col-md-6">
-              <div class="first-titulos" style="display: flex">
-                <h1 class="titulo">Bernardo</h1>
-                <h1 class="castellani" style="color: #3d57f4">Castellani</h1>
-              </div>
+        <div id="particles-js">
+            <img class="foto_port" src="./img/fotoport.png" alt="" />
+            <div class="container tituloss">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-12 col-md-6">
+                        <div class="first-titulos" style="display: flex">
+                            <h1 class="titulo">Bernardo</h1>
+                            <h1 class="castellani" style="color: #3d57f4">Castellani</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtitulos">
+                    <div class="row">
+                        <div class="col-12 col-md-6"></div>
+                        <div class="col text-center">
+                            <h2 class="titulo2"></h2>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="subtitulos">
-            <div class="row">
-              <div class="col-12 col-md-6"></div>
-              <div class="col text-center">
-                <h2 class="titulo2">Estudante de Engenharia de Software</h2>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
     <div class="row div-seta">
-      <div class="col text-center">
-        <a id="seta_home" href="#first_page">
-          <i class="fas fa-arrow-down"></i>
-        </a>
-      </div>
+        <div class="col text-center">
+            <a id="seta_home" href="#sobre">
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
     </div>
-    <div style="margin-top: 20px" id="first_page">
+
+    <!-- <div style="margin-top: 20px" id="first_page">
       <div class="d-flex justify-content-center">
         <a href="#sobre" class="">
           <div class="botao-sobre">
@@ -90,309 +98,297 @@
             <span><img src="img/contato.png" /></span> <span>Contato</span>
           </div>
         </a>
-      </div>
-      <div id="github-stats">
-        <h2>Github Stats</h2>
-        <div class="pie-charts">
-          <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=becastellani&layout=donut-vertical&theme=blue-green"
-            alt=""
-          />
-        </div>
-        <div class="git-status">
-          <img
-            height="160em"
-            src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=becastellani&theme=dark&hide_border=false&&layout=compact"
-          />
-          <img
-            height="160em"
-            width="370em"
-            src="https://github-readme-stats-sigma-five.vercel.app/api?username=becastellani&show_icons=true&theme=dark&hide_border=false&show_owner=true"
-          />
-        </div>
-      </div>
+      </div> -->
     </div>
-    <div id="sobre">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <p class="title-sobre">Sobre</p>
-          <div class="sobre-div">
-            <p class="desc">
-              Apaixonado por tecnologia desde os 12 anos, sou estudante de
-              Engenharia de Software, buscando constantemente aprendizado. Tenho
-              experiência prática em diversas tecnologias, como PHP, Laravel,
-              ReactJS, MySql, C++ e C# (.NET Framework), além de habilidades em
-              manutenção de computadores, programação de Arduino e robótica.
-              Mesmo sem concluir meu curso de Tecnologia em Desenvolvimento de
-              Sistemas devido a uma mudança de estado, essa experiência
-              solidificou minha base de conhecimento e desenvolveu uma
-              mentalidade analítica. Além disso, como ex-jogador de basquete com
-              oito anos de experiência, atuei como capitão, aprimorando
-              habilidades de liderança, trabalho em equipe e resiliência.
-              Motivado pela paixão enraizada pela tecnologia, busco desafios
-              empolgantes para expandir meus conhecimentos e contribuir para
-              soluções inovadoras.
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <div class="container-terminal">
-            <div class="terminal_toolbar">
-              <div class="butt">
-                <button class="btn btn-color"></button>
-                <button class="btn"></button>
-                <button class="btn"></button>
-              </div>
-              <p class="user">becastellani@admin: ~</p>
-              <div class="add_tab">+</div>
-            </div>
-            <div class="terminal_body">
-              <div class="terminal_promt">
-                <span class="terminal_user">becastellani@admin</span
-                ><span class="cdroot">xampp/htdocs/portfolio</span
-                ><span class="cdbranch">(main)</span>
-                <span class="terminal_location">~</span>
-                <div class="quebralinha"></div>
-                <span class="terminal_bling">$ php artisan serve</span>
-                <div class="quebralinha"></div>
-                <span class="terminal_laravel"
-                  >Starting Laravel development server:</span
-                ><span class="terminal_bling">http://127.0.0.1:8000</span>
-                <span class="terminal_bling"
-                  >[Thu Jan 4 15:44:52 2024] PHP 8.2.4 Development Server
-                  (http://127.0.0.1:8000) started</span
-                >
-                <span class="terminal_cursor"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="experiencias">
-      <h1 class="title-sobre text-center">Experiências e Formações</h1>
-      <div class="row">
-        <div class="col-md-6">
-          <section id="cd-timeline" class="cd-container">
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-picture"></div>
-
-              <div class="cd-timeline-content">
-                <h2>Freelancer</h2>
-                <div class="timeline-content-info">
-                  <span class="timeline-content-info-title">
-                    <i class="fa fa-certificate" aria-hidden="true"></i>
-                    Desenvolvedor Web
-                  </span>
-                  <span class="timeline-content-info-date">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    Jan 2023 - Maio 2023
-                  </span>
+    <div data-aos="fade-up" data-aos-delay="300">
+        <div id="sobre">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <p class="title-sobre">Sobre</p>
+                    <div class="sobre-div">
+                        <p class="desc">
+                            Apaixonado por tecnologia desde os 12 anos, sou estudante de
+                            Engenharia de Software, buscando constantemente aprendizado. Tenho
+                            experiência prática em diversas tecnologias, como PHP, Laravel,
+                            ReactJS, MySql, C++ e C# (.NET Framework), além de habilidades em
+                            manutenção de computadores, programação de Arduino e robótica.
+                            Mesmo sem concluir meu curso de Tecnologia em Desenvolvimento de
+                            Sistemas devido a uma mudança de estado, essa experiência
+                            solidificou minha base de conhecimento e desenvolveu uma
+                            mentalidade analítica. Além disso, como ex-jogador de basquete com
+                            oito anos de experiência, atuei como capitão, aprimorando
+                            habilidades de liderança, trabalho em equipe e resiliência.
+                            Motivado pela paixão enraizada pela tecnologia, busco desafios
+                            empolgantes para expandir meus conhecimentos e contribuir para
+                            soluções inovadoras.
+                        </p>
+                    </div>
                 </div>
-                <p>Desenvolvimento de Aplicações em PHP</p>
-                <ul class="content-skills">
-                  <li>MySQL</li>
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>jQuery</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="cd-timeline-block">
-              <div class="cd-timeline-img cd-movie"></div>
-              <!-- cd-timeline-img -->
-
-              <div class="cd-timeline-content">
-                <h2>Grupo Carbon</h2>
-                <div class="timeline-content-info">
-                  <span class="timeline-content-info-title">
-                    <i class="fa fa-certificate" aria-hidden="true"></i>
-                    Suporte Técnico
-                  </span>
-                  <span class="timeline-content-info-date">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    Maio 2023 - Present
-                  </span>
+                <div class="col-12 col-md-4">
+                    <div class="container-terminal">
+                        <div class="terminal_toolbar">
+                            <div class="butt">
+                                <button class="btn btn-color"></button>
+                                <button class="btn"></button>
+                                <button class="btn"></button>
+                            </div>
+                            <p class="user">becastellani@admin: ~</p>
+                            <div class="add_tab">+</div>
+                        </div>
+                        <div class="terminal_body">
+                            <div class="terminal_promt">
+                                <span class="terminal_user">becastellani@admin</span><span
+                                    class="cdroot">xampp/htdocs/portfolio</span><span class="cdbranch">(main)</span>
+                                <span class="terminal_location">~</span>
+                                <div class="quebralinha"></div>
+                                <span class="terminal_bling">$ php artisan serve</span>
+                                <div class="quebralinha"></div>
+                                <span class="terminal_laravel">Starting Laravel development server:</span><span
+                                    class="terminal_bling">http://127.0.0.1:8000</span>
+                                <span class="terminal_bling">[Thu Jan 4 15:44:52 2024] PHP 8.2.4 Development Server
+                                    (http://127.0.0.1:8000) started</span>
+                                <span class="terminal_cursor"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p>
-                  Suporte ao Cliente, Validações no Sistema, Demandas em
-                  Desenvolvimento em PHP, Consultas avançadas em MySql,
-                  Metodologias Ágeis
-                </p>
-                <ul class="content-skills">
-                  <li>MySQL</li>
-                  <li>PHP</li>
-                  <li>Laravel</li>
-                  <li>jQuery</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
             </div>
-          </section>
         </div>
-        <div class="col-md-6">
-          <ul class="academic-formations">
-            <li class="formation-card">
-              <h3>Escola da Inteligência<span class="year">2019 </span></h3>
-              <p class="institution">Escola da Inteligência</p>
-              <p class="descricao-form">Capacitação Socioemocional</p>
-            </li>
-            <li class="formation-card">
-              <h3>Wadhwani Job Ready <span class="year">2021 </span></h3>
-              <p class="institution">Wadhwani Foundation</p>
-              <p class="descricao-form">
-                Capacitação Socioemocional e Desenvolvimento de Soft Skills
-              </p>
-            </li>
-            <li class="formation-card">
-              <h3>
-                Ensino Médio Profissionalizante (Pós-médio), Desenvolvimento de
-                Sistemas <span class="year">2020-2022 </span>
-              </h3>
-              <p class="institution">ETEC Coronel Raphael Brandão</p>
-              <p class="descricao-form">
-                Ensino Médio com Técnico, não finalizado por mudança de estado.
-              </p>
-            </li>
-            <li class="formation-card">
-              <h3>Pacote Office <span class="year">2022 </span></h3>
-              <p class="institution">SENAC</p>
-              <p class="descricao-form">Pacote Office Avançado</p>
-            </li>
-            <li class="formation-card">
-              <h3>
-                Engenharia de Software
-                <span class="year">2023 - Presente </span>
-              </h3>
-              <p class="institution">Biopark Educação</p>
-              <p class="descricao-form">Bacharel em Engenharia de Software</p>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-    <div id="projetos">
-      <div class="title-sobre text-center"><h1>Projetos</h1></div>
-      <div class="all-projects">
-      </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+        <div id="experiencias">
+            <h1 class="title-sobre text-center">Experiências e Formações</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <section id="cd-timeline" class="cd-container">
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-picture"></div>
+
+                            <div class="cd-timeline-content">
+                                <h2>Desenvolvedor Web</h2>
+                                <div class="timeline-content-info">
+                                    <span class="timeline-content-info-title">
+                                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                                        Freelancer
+                                    </span>
+                                    <span class="timeline-content-info-date">
+                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                        Jan 2023 - Maio 2023
+                                    </span>
+                                </div>
+                                <p>Desenvolvimento de Aplicações em PHP</p>
+                                <ul class="content-skills">
+                                    <li>MySQL</li>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>jQuery</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img cd-movie"></div>
+                            <!-- cd-timeline-img -->
+
+                            <div class="cd-timeline-content">
+                                <h2>Suporte Técnico</h2>
+                                <div class="timeline-content-info">
+                                    <span class="timeline-content-info-title">
+                                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                                        Grupo Carbon
+                                    </span>
+                                    <span class="timeline-content-info-date">
+                                        <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                        Maio 2023 - Momento
+                                    </span>
+                                </div>
+                                <p>
+                                    Suporte ao Cliente, Validações no Sistema, Demandas em
+                                    Desenvolvimento em PHP, Consultas avançadas em MySql,
+                                    Metodologias Ágeis
+                                </p>
+                                <ul class="content-skills">
+                                    <li>MySQL</li>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                    <li>jQuery</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <ul class="academic-formations">
+                        <li class="formation-card">
+                            <h3>Escola da Inteligência<span class="year">2019 </span></h3>
+                            <p class="institution">Escola da Inteligência</p>
+                            <p class="descricao-form">Capacitação Socioemocional</p>
+                        </li>
+                        <li class="formation-card">
+                            <h3>Wadhwani Job Ready <span class="year">2021 </span></h3>
+                            <p class="institution">Wadhwani Foundation</p>
+                            <p class="descricao-form">
+                                Capacitação Socioemocional e Desenvolvimento de Soft Skills
+                            </p>
+                        </li>
+                        <li class="formation-card">
+                            <h3>
+                                Ensino Médio Profissionalizante (Pós-médio), Desenvolvimento de
+                                Sistemas <span class="year">2020-2022 </span>
+                            </h3>
+                            <p class="institution">ETEC Coronel Raphael Brandão</p>
+                            <p class="descricao-form">
+                                Ensino Médio com Técnico, não finalizado por mudança de estado.
+                            </p>
+                        </li>
+                        <li class="formation-card">
+                            <h3>Pacote Office <span class="year">2022 </span></h3>
+                            <p class="institution">SENAC</p>
+                            <p class="descricao-form">Pacote Office Avançado</p>
+                        </li>
+                        <li class="formation-card">
+                            <h3>
+                                Engenharia de Software
+                                <span class="year">2023 - Presente </span>
+                            </h3>
+                            <p class="institution">Biopark Educação</p>
+                            <p class="descricao-form">Bacharel em Engenharia de Software</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+        <div id="projetos">
+            <div class="title-sobre text-center">
+                <h1>Projetos</h1>
+            </div>
+            <div class="all-projects">
+            </div>
+        </div>
     </div>
     <canvas width="600" height="600"></canvas>
-  </body>
-  <script src="./js/type.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script>
+</body>
+<script src="./js/typesubs.js"></script>
+<script src="./js/type.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script>
+    AOS.init({
+        once: true,
+    });
     particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 80,
-          density: {
-            enable: true,
-            value_area: 800,
-          },
-        },
-        color: {
-          value: "#ffffff",
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 4,
-            color: "#000000",
-          },
-          polygon: {
-            nb_sides: 5,
-          },
-          image: {
-            src: "img/github.svg",
-            width: 100,
-            height: 100,
-          },
-        },
-        opacity: {
-          value: 0.5,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false,
-          },
-        },
-        size: {
-          value: 0,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false,
-          },
-        },
-        line_linked: {
-          enable: true,
-          distance: 299.87610382026367,
-          color: "#ffffff",
-          opacity: 0.06313181133058181,
-          width: 1.4204657549380908,
-        },
-        move: {
-          enable: true,
-          speed: 6,
-          direction: "none",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "grab",
-          },
-          onclick: {
-            enable: true,
-            mode: "push",
-          },
-          resize: true,
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 1,
+        particles: {
+            number: {
+                value: 80,
+                density: {
+                    enable: true,
+                    value_area: 800,
+                },
             },
-          },
-          bubble: {
-            distance: 400,
-            size: 40,
-            duration: 2,
-            opacity: 8,
-            speed: 3,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-          push: {
-            particles_nb: 4,
-          },
-          remove: {
-            particles_nb: 2,
-          },
+            color: {
+                value: "#ffffff",
+            },
+            shape: {
+                type: "circle",
+                stroke: {
+                    width: 4,
+                    color: "#000000",
+                },
+                polygon: {
+                    nb_sides: 5,
+                },
+                image: {
+                    src: "img/github.svg",
+                    width: 100,
+                    height: 100,
+                },
+            },
+            opacity: {
+                value: 0.5,
+                random: false,
+                anim: {
+                    enable: false,
+                    speed: 1,
+                    opacity_min: 0.1,
+                    sync: false,
+                },
+            },
+            size: {
+                value: 0,
+                random: true,
+                anim: {
+                    enable: false,
+                    speed: 40,
+                    size_min: 0.1,
+                    sync: false,
+                },
+            },
+            line_linked: {
+                enable: true,
+                distance: 299.87610382026367,
+                color: "#ffffff",
+                opacity: 0.06313181133058181,
+                width: 1.4204657549380908,
+            },
+            move: {
+                enable: true,
+                speed: 6,
+                direction: "none",
+                random: false,
+                straight: false,
+                out_mode: "out",
+                bounce: false,
+                attract: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 1200,
+                },
+            },
         },
-      },
-      retina_detect: true,
+        interactivity: {
+            detect_on: "canvas",
+            events: {
+                onhover: {
+                    enable: true,
+                    mode: "grab",
+                },
+                onclick: {
+                    enable: true,
+                    mode: "push",
+                },
+                resize: true,
+            },
+            modes: {
+                grab: {
+                    distance: 400,
+                    line_linked: {
+                        opacity: 1,
+                    },
+                },
+                bubble: {
+                    distance: 400,
+                    size: 40,
+                    duration: 2,
+                    opacity: 8,
+                    speed: 3,
+                },
+                repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                },
+                push: {
+                    particles_nb: 4,
+                },
+                remove: {
+                    particles_nb: 2,
+                },
+            },
+        },
+        retina_detect: true,
     });
     var count_particles, stats, update;
     stats = new Stats();
@@ -402,22 +398,23 @@
     stats.domElement.style.top = "0px";
     document.body.appendChild(stats.domElement);
     count_particles = document.querySelector(".js-count-particles");
-    update = function () {
-      stats.begin();
-      stats.end();
-      if (
-        window.pJSDom[0].pJS.particles &&
-        window.pJSDom[0].pJS.particles.array
-      ) {
-        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (
+            window.pJSDom[0].pJS.particles &&
+            window.pJSDom[0].pJS.particles.array
+        ) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
     };
     requestAnimationFrame(update);
 
-    particlesJS.load("particles-js", "particles.json", function () {
-      console.log("particles.json loaded...");
+    particlesJS.load("particles-js", "particles.json", function() {
+        console.log("particles.json loaded...");
     });
-  </script>
- <script src="js/card.js"></script>
+</script>
+<script src="js/card.js"></script>
+
 </html>

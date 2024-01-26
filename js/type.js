@@ -12,7 +12,6 @@ function typeWrite(elemento){
 }
 const castellani = document.querySelector('.castellani');
 const titulo = document.querySelector('.titulo');
-const titulo2 = document.querySelector('.titulo2');
     const textocastellani = castellani.innerHTML.split('');
     castellani.innerHTML = ' ';
 typeWrite(titulo);
@@ -28,4 +27,26 @@ setTimeout(()=>{
       });
 }, 1000)
 
-typeWrite(titulo2)
+
+
+function typeWrite2(elemento, textArray = null, i = 0) {
+    const textoArray = textArray ? textArray[i].split('') : elemento.innerHTML.split('');
+    elemento.innerHTML = ' ';
+    textoArray.forEach(function(letra, i){   
+        setTimeout(function(){
+            elemento.innerHTML += letra;
+        }, 75 * i);
+    });
+
+    // Se textArray for fornecido, comece a próxima string quando terminar esta
+    if (textArray) {
+        setTimeout(function(){
+            typeWrite2(elemento, textArray, (i + 1) % textArray.length);
+        }, 100 * textoArray.length);
+    }
+}
+
+const titulo2 = document.querySelector('.titulo2');
+
+const textosTitulo2 = ['Desenvolvedor Full Stack','Estudante de Engenharia de Software'];
+typeWrite2(titulo2, textosTitulo2);
