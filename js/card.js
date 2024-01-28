@@ -17,10 +17,8 @@ content.className = "content";
 var front = document.createElement("div");
 front.className = "front";
 
-var img = document.createElement("img");
-img.setAttribute("src", element.imagem);
-img.style.width = "70%";
-img.style.height = "auto";
+
+
 var titulo = document.createElement("p")
 titulo.innerText = element.titulo
 var hr = document.createElement("hr")
@@ -39,7 +37,14 @@ lista.appendChild(li);
 });
 
 
-front.appendChild(img)
+if (element.imagem) {
+    var img = document.createElement("img");
+    img.setAttribute("src", element.imagem);
+    img.style.width = "60%";
+    img.style.height = "auto";
+    front.appendChild(img);
+}
+
 front.appendChild(titulo)
 front.appendChild(hr)
 front.appendChild(title_cara)

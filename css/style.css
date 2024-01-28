@@ -1,145 +1,170 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+border: 0;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #111111;
-  overflow-x: hidden;
+background-color: #111111;
+overflow-x: hidden;
 }
 
 #home {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+position: relative;
+width: 100%;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
 
 #home h1 {
-  color: white;
-  font-size: 4vw;
+color: white;
+font-size: 4vw;
 }
 .subtitulos {
-  margin-left: 20%;
+margin-left: 20%;
 }
 .titulo2 {
-  color: rgb(255, 255, 255);
-  font-size: 2vw;
+color: rgb(255, 255, 255);
+font-size: 2vw;
 }
 
+
 .foto_port {
+position: absolute;
+width: 20vw; /* Ajuste este valor conforme necessário */
+height: auto;
+border-radius: 50%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.div-seta {
+margin-top: -60px; /* Adiciona um espaçamento superior de 20px */
+}
+
+#seta_home i {
+color: white;
+font-size: 2.5vw;
+animation: seta 1s infinite;
+}
+/* Posiciona a imagem principal no centro */
+.foto_port {
+position: absolute;
+top: 50%;
+left: 26%;
+transform: translate(-50%, -50%);
+transition: transform 0.3s ease-in-out;
+}
+.foto_port:hover {
+  transform: translate(-50%, calc(-50% - 10px));
+}
+
+#particles-js {
+position: absolute;
+width: 100%;
+height: 80vh; /* ajuste para a altura do #home */
+z-index: 0;
+}
+
+.first-titulos .subtitulos{
+z-index: 1;
+}
+
+.tituloss {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+}
+
+
+.foto_port2 {
   position: absolute;
   width: 20vw; /* Ajuste este valor conforme necessário */
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.div-seta {
-  margin-top: -60px; /* Adiciona um espaçamento superior de 20px */
-}
-
-#seta_home i {
-  color: white;
-  font-size: 2.5vw;
-  animation: seta 1s infinite;
-}
-/* Posiciona a imagem principal no centro */
-.foto_port {
-  position: absolute;
-  top: 50%;
-  left: 26%;
+  box-shadow: 0 0 10px rgba(92, 92, 92, 0.473);
+  top: 35%;
+  left: 80%;
   transform: translate(-50%, -50%);
+  transition: transform 0.3s ease-in-out; /* Adicionado para suavizar a animação */
 }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 80vh; /* ajuste para a altura do #home */
-  z-index: 0;
+.foto_port2:hover {
+  transform: translate(-50%, calc(-50% - 10px)); /* Adicionado para mover a imagem para cima quando o mouse passar sobre ela */
 }
-
-.first-titulos .subtitulos{
-  z-index: 1;
-}
-
-.tituloss {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
 
 /* Ajusta o layout para telas menores */
 @media (max-width: 768px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -450px;
-    flex-direction: column;
-    width: 100%;
-  }
-  .foto_port {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    width: 60vw;
-    transform: translate(-50%, -50%);
-  }
-  .first-titulos {
-    margin-left: 20px;
-  }
-  .subtitulos {
-    margin-left: 0%;
-  }
-  #home h1 {
-    font-size: 8vw;
-  }
-  .titulo,
-  .castellani,
-  .titulo2 {
-    font-size: 5vw;
-    justify-content: center;
-    text-align: center;
-  }
+html,
+body {
+overflow-x: hidden;
+}
+body {
+position: relative;
+}
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -450px;
+flex-direction: column;
+width: 100%;
+}
+.foto_port {
+position: absolute;
+top: 70%;
+left: 50%;
+width: 60vw;
+transform: translate(-50%, -50%);
+}
+.foto_port2 {
+position: absolute;
+display:none
+}
+.first-titulos {
+margin-left: 20px;
+}
+.subtitulos {
+margin-left: 0%;
+}
+#home h1 {
+font-size: 8vw;
+}
+.titulo,
+.castellani,
+.titulo2 {
+font-size: 5vw;
+justify-content: center;
+text-align: center;
+}
 
-  #seta_home i {
-    font-size: 30px;
-  }
+#seta_home i {
+font-size: 30px;
+}
 
 
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    z-index: 0;
-  }
-  
-  .first-titulos .subtitulos{
-    z-index: 1;
-  }
-  
-  .tituloss {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    z-index: 1;
-  }
-  
+#particles-js {
+position: absolute;
+width: 100%;
+height: 70vh;
+z-index: 0;
+}
+
+.first-titulos .subtitulos{
+z-index: 1;
+}
+
+.tituloss {
+position: absolute;
+top: 90%;
+left: 50%;
+z-index: 1;
+}
+
 }
