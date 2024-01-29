@@ -48,5 +48,5 @@ function typeWrite2(elemento, textArray = null, i = 0) {
 
 const titulo2 = document.querySelector('.titulo2');
 
-const textosTitulo2 = ['Desenvolvedor Full Stack','Estudante de Engenharia de Software'];
+const textosTitulo2 = ['Desenvolvedor Web','Estudante de Engenharia de Software'];
 typeWrite2(titulo2, textosTitulo2);
